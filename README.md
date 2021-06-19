@@ -5,9 +5,7 @@ Made using [ProfanityDetector](https://pypi.org/project/ProfanityDetector/).
 
 ## Deploying
 - Heroku:  
-<a href="https://heroku.com/deploy">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/deeprajop/ProfanityDetectorBot)
    
 - Local Machine:
 `pip install requirements.txt`     
