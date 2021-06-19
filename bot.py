@@ -39,19 +39,19 @@ async def check_if_admin(message):
 async def start_msg(event):
     sender = await bot.get_entity(event.sender_id)
     await event.reply(
-        f"Hi {sender.first_name}!\nI am a profanity detector bot.\n\nMake me admin in your group with `delete messages` permission and I'll delete messsages containing abuses!",
+        f"Hi {sender.first_name}!\nI am Zer0Byte ✘ Profanity detector bot.\n\nMake me admin in your group with `Delete Messages` permission and I'll delete messsages containing abuses!",
         buttons=[
-            [Button.inline("Help 🆘", data="helpme")],
+            [Button.inline("❔ Help", data="helpme")],
             [
                 Button.url(
-                    "Add me to a group ➕",
+                    "➕ Add Zer0Byte Profanity",
                     url=f"http://t.me/{(await bot.get_me()).username}?startgroup=botstart",
                 )
             ],
             [
-                Button.url("📥 Channel", url="https://t.me/BotzHub"),
+                Button.url("🔔 Updates", url="https://t.me/Zer0ByteOfficial"),
                 Button.url(
-                    "Package 📦", url="https://pypi.org/project/ProfanityDetector/"
+                    "👥 Support", url="https://t.me/Zer0ByteSupport"
                 ),
             ],
         ],
@@ -62,7 +62,7 @@ async def start_msg(event):
 async def start_grp(event):
     sender = await bot.get_entity(event.sender_id)
     await event.reply(
-        f"Hey {sender.first_name}!\n__I'm up, protecting this group!__\n**False positives?** Report them to @BotzHubChat!"
+        f"Hey {sender.first_name}!\n__I'm up, Protecting this group!__\n**False positives?** Report them to @Zer0ByteSupport!"
     )
 
 
@@ -76,7 +76,7 @@ async def helper_(event):
 - Add me to a group, and make me admin, with \"delete messages\" permission.
 - If the bot is not admin, it will not be deleting messages containing blacklisted words.\n
 **Report False Positives:**
-- You are free to report False detections in @BotzHubChat.""",
+- You are free to report False detections in @Zer0ByteSupport.""",
         buttons=[[Button.inline("Back", data="start")]],
     )
 
@@ -87,17 +87,17 @@ async def start_msg(event):
     await event.edit(
         f"Hi {sender.first_name}!\nI am a profanity detector bot.\n\nMake me admin in your group with `delete messages` permission and I'll delete messsages containing abuses!",
         buttons=[
-            [Button.inline("Help 🆘", data="helpme")],
+            [Button.inline("❔ Help", data="helpme")],
             [
                 Button.url(
-                    "Add me to a group ➕",
+                    "➕ Add Zer0Byte Profanity",
                     url=f"http://t.me/{(await bot.get_me()).username}?startgroup=botstart",
                 )
             ],
             [
-                Button.url("📥 Channel", url="https://t.me/BotzHub"),
+                Button.url("🔔 Channel", url="https://t.me/Zer0ByteOfficial"),
                 Button.url(
-                    "Package 📦", url="https://pypi.org/project/ProfanityDetector/"
+                    "👥 Support", url="https://t.me/Zer0ByteSupport"
                 ),
             ],
         ],
